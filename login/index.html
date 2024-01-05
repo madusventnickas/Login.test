@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login Responsivo</title>
+</head>
+<body>
+    <div class="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm" novalidate>
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <div id="messages"></div>
+
+        <button id="forgotPasswordBtn">Esqueci a senha</button>
+
+        <div id="overlay" class="overlay"></div>
+
+        <div id="forgotPasswordModal" class="modal">
+            <div class="modalContent">
+                <button id="closeBtn" class="close">&times;</button>
+                <h2>Recuperar Senha</h2>
+                <p>Insira seu endereço de e-mail para recuperar a senha:</p>
+                <input type="email" id="email" name="email" required>
+                <button id="recoverPasswordBtn">Recuperar Senha</button>
+                <div id="modalMessages"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
